@@ -1,0 +1,94 @@
+{% block content %}
+<header class="header">
+	<div class="uk-container">
+		 <div class="header__desktop uk-visible-large">
+				<div class="uk-grid">
+				<div class="uk-width-2-10">
+					<a href="/" class="logo">
+						<img src="img/logo.png" alt="Ostron" title="Ostron">
+					</a>
+				</div>
+				<div class="uk-width-8-10">
+					<div class="uk-grid uk-grid-collapse">
+						<div class="uk-width-1-2">
+							<nav class="main-nav">
+								<ul>
+									<li><a href="">Применение</a></li>
+									<li><a href="">Комплектация</a></li>
+									<li><a href="">О компании</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="uk-width-1-2">
+						<div class="header__contacts">
+								<a href="tel:+74954445634" class="telephone">+7 (495) 444-56-34</a>
+								<a href="#feedback-modal" class="btn btn--yellow uk-float-right" data-uk-modal>Заказать звонок</a>
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		 </div>
+		 <div class="header__mobile uk-hidden-large">
+
+		 		<div class="uk-grid">
+		 			<div class="uk-width-1-2">
+		 				<a href="/" class="logo">
+		 					<img src="img/logo.png" alt="">
+		 				</a>
+		 			</div>
+		 			<div class="uk-width-1-2">
+						<ul class="mobile-menu">
+							<li>
+				 				<a href="tel:+74954445634">
+				 					<svg width="20px" height="20px" class="icon-tel">
+				 					  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-tel"></use>
+				 					</svg>
+				 				</a>
+							</li>
+							<li>
+				 				<a href="#offcanvas-menu" data-uk-offcanvas>
+				 					<svg width="25px" height="25px" class="icon-menu">
+				 					  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-menu"></use>
+				 					</svg>
+				 				</a>
+							</li>
+						</ul>
+		 			</div>
+		 		</div>
+			<div id="offcanvas-menu" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+						<div class="uk-panel">
+							<ul class="uk-nav">
+									<li><a href="">Применение</a></li>
+									<li><a href="">Комплектация</a></li>
+									<li><a href="">О компании</a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="banner">
+		 	 <div class="uk-grid uk-grid-collapse">
+		 	 	<div class="uk-width-1-1 uk-width-medium-1-2">
+		 	 		<div class="title-h1">
+		 	 			ГАЗОАНАЛИТИЧЕСКАЯ СИСТЕМА OSTRON 
+		 	 		</div>
+		 	 		<p>
+		 	 			Гибкое решение сконфигурированное под  ваш тип задач, оптимальная цена, евроейское качество Гибкое решение сконфигурированное под  ваш тип задач, оптимальная цена, евроейское качество
+		 	 		</p>
+					<div class="banner__btn-wrapper">
+						<a href="#calc" class="btn btn--fill btn--medium" data-uk-smooth-scroll>Рассчитать комплект</a>
+						<a href="#feedback-modal" class="btn btn--medium" data-uk-modal>Консультация</a>
+					</div>
+		 	 	</div>
+		 	 	<div class="uk-width-1-1 uk-width-medium-1-2">
+		 	 		<div class="banner__img">
+		 	 			<img src="img/box.png" alt="">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 </div>
+	</div>
+</header>
+{% endblock %}

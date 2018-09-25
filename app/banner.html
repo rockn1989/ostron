@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta property="og:url" content="">
+	<meta property="og:type" content="Article">
+	<meta property="og:site_name" content="">
+	<meta property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="libs/css/uikit.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lte IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="libs/html5shiv.min.js"></script>
+		<script src="libs/placeholders.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<header class="header">
+	<div class="uk-container">
+		 <div class="header__desktop uk-visible-large">
+				<div class="uk-grid">
+				<div class="uk-width-2-10">
+					<a href="/" class="logo">
+						<img src="img/logo.png" alt="Ostron" title="Ostron">
+					</a>
+				</div>
+				<div class="uk-width-8-10">
+					<div class="uk-grid uk-grid-collapse">
+						<div class="uk-width-1-2">
+							<nav class="main-nav">
+								<ul>
+									<li><a href="">Применение</a></li>
+									<li><a href="">Комплектация</a></li>
+									<li><a href="">О компании</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="uk-width-1-2">
+						<div class="header__contacts">
+								<a href="tel:+74954445634" class="telephone">+7 (495) 444-56-34</a>
+								<a href="#feedback-modal" class="btn btn--yellow uk-float-right" data-uk-modal>Заказать звонок</a>
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		 </div>
+		 <div class="header__mobile uk-hidden-large">
+
+		 		<div class="uk-grid">
+		 			<div class="uk-width-1-2">
+		 				<a href="/" class="logo">
+		 					<img src="img/logo.png" alt="">
+		 				</a>
+		 			</div>
+		 			<div class="uk-width-1-2">
+						<ul class="mobile-menu">
+							<li>
+				 				<a href="tel:+74954445634">
+				 					<svg width="20px" height="20px" class="icon-tel">
+				 					  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-tel"></use>
+				 					</svg>
+				 				</a>
+							</li>
+							<li>
+				 				<a href="#offcanvas-menu" data-uk-offcanvas>
+				 					<svg width="25px" height="25px" class="icon-menu">
+				 					  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-menu"></use>
+				 					</svg>
+				 				</a>
+							</li>
+						</ul>
+		 			</div>
+		 		</div>
+			<div id="offcanvas-menu" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+						<div class="uk-panel">
+							<ul class="uk-nav">
+									<li><a href="">Применение</a></li>
+									<li><a href="">Комплектация</a></li>
+									<li><a href="">О компании</a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="banner">
+		 	 <div class="uk-grid uk-grid-collapse">
+		 	 	<div class="uk-width-1-1 uk-width-medium-1-2">
+		 	 		<div class="title-h1">
+		 	 			ГАЗОАНАЛИТИЧЕСКАЯ СИСТЕМА OSTRON 
+		 	 		</div>
+		 	 		<p>
+		 	 			Гибкое решение сконфигурированное под  ваш тип задач, оптимальная цена, евроейское качество Гибкое решение сконфигурированное под  ваш тип задач, оптимальная цена, евроейское качество
+		 	 		</p>
+					<div class="banner__btn-wrapper">
+						<a href="#calc" class="btn btn--fill btn--medium" data-uk-smooth-scroll>Рассчитать комплект</a>
+						<a href="#feedback-modal" class="btn btn--medium" data-uk-modal>Консультация</a>
+					</div>
+		 	 	</div>
+		 	 	<div class="uk-width-1-1 uk-width-medium-1-2">
+		 	 		<div class="banner__img">
+		 	 			<img src="img/box.png" alt="">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 </div>
+	</div>
+</header>
+
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.banner {
+			min-height: 450px;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.banner__container {
+			position: relative;
+			margin: 0 auto;
+			padding: 75px 0;
+			max-width: 1170px;
+			font-family: "Proxima Nova";
+			overflow: hidden;
+			font-size: 0;
+		}
+		.banner__desc,
+		.banner__wrapper-img {
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
+			
+		}
+		.banner__wrapper-img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			max-height: 100%;
+			width: 50%;
+		}
+		.banner__text {
+			margin-bottom: 50px;
+			color: #5a5a5a;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 400;
+		}
+		.banner__btn {
+			margin-bottom: 30px;
+			padding: 0 25px;
+			display: inline-block;
+			vertical-align: top;
+			min-width: 200px;
+			text-align: center;
+			height: 50px;
+			line-height: 50px;
+			color: #2a3246;
+			font-size: 16px;
+			font-weight: 700;
+			border: 1px solid #dd0039;
+			outline: none;
+			-webkit-border-radius: 100px;
+			border-radius: 25px;
+			cursor: pointer;
+			font-family: "Proxima Nova";
+			background: transparent;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			transition: all .3s ease;
+			text-decoration: none;
+			box-shadow: 0 8px 16px #f7afc2;
+			background-color: #ff0043;
+			border: none;
+			color: #ffffff
+		}
+		.banner__btn:hover {
+	    color: #ffffff;
+	    text-decoration: none;
+	    background-color: #ff7e9f;
+		}
+		.banner__add-img {
+			position: absolute;
+		}
+		h2,.banner__title {
+			margin-bottom: 30px;
+			font-size: 28px;
+			line-height: 34px;
+			color: #2a3246;
+			font-family: "Proxima Nova";
+			letter-spacing: .6px;
+			font-weight: 700;
+		}
+		@media (min-width: 320px) {
+			.banner__wrapper-img {
+				display: none;
+			}
+			.banner__desc {
+				width: 100%;
+			}
+		}
+		@media (min-width: 768px) {
+			.banner__wrapper-img {
+				display: block;	
+			}
+			.banner__desc {
+				width: 50%;
+			}
+		}
+	</style>
+
+	<!-- begin banner -->
+	<div class="banner" style="background-image: url(img/banner-bg.png)">
+		<!-- begin banner-container -->
+		<div class="banner__container">
+			<div class="banner__desc">
+				<h2>
+					Прием врача косметолога каждую субботу — БЕСПЛАТНО!
+				</h2>
+				<div class="banner__text">
+					В случае проведения любой косметологической инъекционной процедуры, прием Врача – косметолога БЕСПЛАТНО!
+					Препараты подбираются врачом индивидуально под пациента.
+				</div>
+				<a href="" class="banner__btn">Подробнее</a>
+			</div>
+			<div class="banner__wrapper-img">
+				<img class="banner__add-img" src="img/banner-add-img.png" alt="" style="bottom: 0; right: 0;">
+			</div>
+		</div>
+		<!-- end banner-container -->
+	</div>
+	<!-- end banner -->
+
+
+
+<footer class="footer">
+	<div class="uk-container">
+		<div class="uk-grid">
+			<div class="uk-width-1-1 uk-width-medium-1-4 uk-width-large-1-4">
+				<a href="" class="logo">
+					<img src="img/logo-footer.png" alt="">
+					<span class="logo__subtitle">Газоаналитическая  система</span>
+				</a>
+			</div>
+			<div class="uk-width-1-1 uk-width-medium-1-4 uk-width-large-2-10">
+				<ul class="footer-nav">
+					<li><a href="#">Комплектация</a></li>
+					<li><a href="#">Применение</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</div>
+			<div class="uk-width-1-1 uk-width-medium-2-4 uk-width-large-3-10">
+				<div class="company-contacts">
+					<div class="address">
+						<div class="label">Адрес:</div>
+						<div class="text">
+							г.Москва, ул. Переменых д 12, офис 245
+						</div>
+					</div>
+					<div class="email">
+						<div class="label">Почта:</div>
+						<div class="text">
+							<a href="mailto:info@nikilect.ru">info@nikilect.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-1-1 uk-width-medium-1-2 uk-width-large-1-4">
+				<div class="footer__tel">
+					<a href="tel:+74954445634" class="telephone">+7 (495) 444-56-34</a>
+					<a href="#feedback-modal" class="btn btn--yellow" data-uk-modal>Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<div id="feedback-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Обратный звонок</div>
+			<div class="subtitle">
+				Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+			</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="feedback-form">
+
+				<fieldset>
+					<label for="feedback-name">Имя</label>
+					<input type="text" id="feedback-name" placeholder="Ваше имя">
+				</fieldset>
+
+				<fieldset>
+					<label for="feedback-tel">Номер телефона</label>
+					<input type="text" id="feedback-tel" class="js__input-mask" name="tel" placeholder="+7 (499) 999-99-99" required>
+				</fieldset>
+
+				<fieldset>
+					<button type="submit" class="btn btn--fill modal-btn">Отправить</button>
+					<div class="form-politics">
+						<label for="feedback-politics" class="js__toggle-checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="custom-label">
+								Согласие на обработку персональных данных
+							</span>
+							<input type="checkbox" name="feedback-politics" id="feedback-politics" required>
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="consultation-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Заказать консультацию</div>
+			<div class="subtitle">
+				Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+			</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="consultation-form">
+
+				<fieldset>
+					<label for="consultation-name">Имя</label>
+					<input type="text" id="consultation-name" placeholder="Ваше имя">
+				</fieldset>
+
+				<fieldset>
+					<label for="consultation-tel">Номер телефона</label>
+					<input type="text" id="consultation-tel" class="js__input-mask" name="tel" placeholder="+7 (499) 999-99-99" required>
+				</fieldset>
+
+				<fieldset>
+					<button type="submit" class="btn btn--fill modal-btn">Отправить</button>
+					<div class="form-politics">
+						<label for="consultation-politics" class="js__toggle-checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="custom-label">
+								Согласие на обработку персональных данных
+							</span>
+							<input type="checkbox" name="consultation-politics" id="consultation-politics" required>
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="libs/jquery-mask/jquery.maskedinput.min.js"></script>
+<script src="libs/jquery.validate.min.js"></script>
+<script src="libs/js/uikit.min.js"></script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/svg4everybody.min.js"></script>
+<script src="libs/ofi.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

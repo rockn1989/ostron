@@ -1,0 +1,131 @@
+{% extends "layouts/default.html" %}
+{% block content %}
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.banner {
+			min-height: 450px;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+		.banner__container {
+			position: relative;
+			margin: 0 auto;
+			padding: 75px 0;
+			max-width: 1170px;
+			font-family: "Proxima Nova";
+			overflow: hidden;
+			font-size: 0;
+		}
+		.banner__desc,
+		.banner__wrapper-img {
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
+			
+		}
+		.banner__wrapper-img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			max-height: 100%;
+			width: 50%;
+		}
+		.banner__text {
+			margin-bottom: 50px;
+			color: #5a5a5a;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 400;
+		}
+		.banner__btn {
+			margin-bottom: 30px;
+			padding: 0 25px;
+			display: inline-block;
+			vertical-align: top;
+			min-width: 200px;
+			text-align: center;
+			height: 50px;
+			line-height: 50px;
+			color: #2a3246;
+			font-size: 16px;
+			font-weight: 700;
+			border: 1px solid #dd0039;
+			outline: none;
+			-webkit-border-radius: 100px;
+			border-radius: 25px;
+			cursor: pointer;
+			font-family: "Proxima Nova";
+			background: transparent;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			transition: all .3s ease;
+			text-decoration: none;
+			box-shadow: 0 8px 16px #f7afc2;
+			background-color: #ff0043;
+			border: none;
+			color: #ffffff
+		}
+		.banner__btn:hover {
+	    color: #ffffff;
+	    text-decoration: none;
+	    background-color: #ff7e9f;
+		}
+		.banner__add-img {
+			position: absolute;
+		}
+		h2,.banner__title {
+			margin-bottom: 30px;
+			font-size: 28px;
+			line-height: 34px;
+			color: #2a3246;
+			font-family: "Proxima Nova";
+			letter-spacing: .6px;
+			font-weight: 700;
+		}
+		@media (min-width: 320px) {
+			.banner__wrapper-img {
+				display: none;
+			}
+			.banner__desc {
+				width: 100%;
+			}
+		}
+		@media (min-width: 768px) {
+			.banner__wrapper-img {
+				display: block;	
+			}
+			.banner__desc {
+				width: 50%;
+			}
+		}
+	</style>
+
+	<!-- begin banner -->
+	<div class="banner" style="background-image: url(img/banner-bg.png)">
+		<!-- begin banner-container -->
+		<div class="banner__container">
+			<div class="banner__desc">
+				<h2>
+					Прием врача косметолога каждую субботу — БЕСПЛАТНО!
+				</h2>
+				<div class="banner__text">
+					В случае проведения любой косметологической инъекционной процедуры, прием Врача – косметолога БЕСПЛАТНО!
+					Препараты подбираются врачом индивидуально под пациента.
+				</div>
+				<a href="" class="banner__btn">Подробнее</a>
+			</div>
+			<div class="banner__wrapper-img">
+				<img class="banner__add-img" src="img/banner-add-img.png" alt="" style="bottom: 0; right: 0;">
+			</div>
+		</div>
+		<!-- end banner-container -->
+	</div>
+	<!-- end banner -->
+
+{% endblock %}

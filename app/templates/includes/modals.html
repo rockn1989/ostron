@@ -1,0 +1,80 @@
+{% block content %}
+
+<div id="feedback-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Обратный звонок</div>
+			<div class="subtitle">
+				Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+			</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="feedback-form">
+
+				<fieldset>
+					<label for="feedback-name">Имя</label>
+					<input type="text" id="feedback-name" placeholder="Ваше имя">
+				</fieldset>
+
+				<fieldset>
+					<label for="feedback-tel">Номер телефона</label>
+					<input type="text" id="feedback-tel" class="js__input-mask" name="tel" placeholder="+7 (499) 999-99-99" required>
+				</fieldset>
+
+				<fieldset>
+					<button type="submit" class="btn btn--fill modal-btn">Отправить</button>
+					<div class="form-politics">
+						<label for="feedback-politics" class="js__toggle-checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="custom-label">
+								Согласие на обработку персональных данных
+							</span>
+							<input type="checkbox" name="feedback-politics" id="feedback-politics" required>
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="consultation-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Заказать консультацию</div>
+			<div class="subtitle">
+				Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+			</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="consultation-form">
+
+				<fieldset>
+					<label for="consultation-name">Имя</label>
+					<input type="text" id="consultation-name" placeholder="Ваше имя">
+				</fieldset>
+
+				<fieldset>
+					<label for="consultation-tel">Номер телефона</label>
+					<input type="text" id="consultation-tel" class="js__input-mask" name="tel" placeholder="+7 (499) 999-99-99" required>
+				</fieldset>
+
+				<fieldset>
+					<button type="submit" class="btn btn--fill modal-btn">Отправить</button>
+					<div class="form-politics">
+						<label for="consultation-politics" class="js__toggle-checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="custom-label">
+								Согласие на обработку персональных данных
+							</span>
+							<input type="checkbox" name="consultation-politics" id="consultation-politics" required>
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
