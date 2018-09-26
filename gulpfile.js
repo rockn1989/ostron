@@ -52,7 +52,6 @@ gulp.task("less", function() {
 		.pipe(plumber())
 		.pipe(less())
 		.pipe(autoprefixer(["last 15 version", "> 1%", 'firefox 14', "ie 8", "ie 7"], {cascade: true}))
-		.pipe(gcmq())
 		.pipe(rename("style.css"))
 		.pipe(gulp.dest("app/css"))
 		.pipe(browserSync.reload({stream: true}))
